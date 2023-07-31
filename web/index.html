@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html style = "overflow-y: hidden" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
+        <!--Bulma CSS zip 0.94 #6c31ed-->
+        <link rel="stylesheet" href="css/bulma.css">
+        <title>StockSenseAI</title>
+        <style>
+            .hero-body{
+                background-image: url('svg/ball.svg');
+                background-size: 110%;
+                background-repeat: no-repeat;
+                background-position: right;
+
+            }
+            .hero {
+              background-image: url('svg/bg.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: bottom;
+            }
+            
+            .bigtext{
+                font-size: 4rem;
+            }
+          </style>
+          <script type="text/javascript" src ="/eel.js"></script>
+          <script type="text/javascript" src ="main.js"></script>
+
+    </head>
+
+
+    <body>
+        <div class="hero is-fullheight">
+            <div class="hero-body">
+                <div class = "container">
+                    <div class ="columns is-vcentered hero-caption">
+                        <div class = "column is-5">
+                            <h1 class = "title bigtext is-bold has-text-black">StockSenseAI</h1>
+                            <h2 class = "subtitle is-3 has-text-black">Predict Stock Prices</h2>
+
+                            <div class = "container">
+                                <input id = "ticker" type="text" class="input is-rounded" placeholder="Enter any stock ticker... $SPY $TSLA $MSFT $NVDA $AAPL">
+                                <div class ="columns mt-1">
+                                    <div class = "column"><input id = "start" type="date" class="input is-rounded" placeholder="Start Date: Ex. 2023-01-30"> </div>
+                                    <div  class = "column"><input id = "end" type="date" class="input is-rounded" placeholder="Start Date: Ex. 2023-05-30"></div>
+                                </div>
+                            </div>
+                            
+
+                            <div class ="columns">
+                                <div class = "column"><input id = "period" type="text" class="input is-rounded" placeholder="Days in future to predict"> </div>
+                                <div class = "column">
+                                    <button class="button is-fullwidth is-link is-outlined is-rounded" onclick="predictGraph()">
+                                        PREDICT! 
+                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" data-icon="feather:arrow-right" class="iconify iconify--feather"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+            </div>
+        
+        </div>
+    </body>
+</html>
